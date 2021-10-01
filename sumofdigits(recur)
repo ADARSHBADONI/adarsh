@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int sum(int n);
+int main()
+{
+int n,result;
+cout<<"enter the number"<<endl;
+cin>>n;
+result=sum(n);
+cout<<"the sum of digits is  "<<result<<endl;
+return 0;
+}
+int sum(int n)
+{
+if(n==0)
+return 0;
+else
+return(n%10+sum(n/10));
+}
